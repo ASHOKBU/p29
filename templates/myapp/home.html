@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>HomePage</title>
+{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+        <h1>HOME HTML</h1> 
+        {% if user.is_authenticated %}
+        <h2>Welcome Mr./Ms. {{user.username}}</h2>
+        {% endif %}
+    </div>
+{% endblock %}
